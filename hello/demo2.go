@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	/*	//获取键盘输入字符
 		reader := bufio.NewReader(os.Stdin)
@@ -32,4 +34,49 @@ func main() {
 		var a int = arr[1][0]
 		fmt.Print(a)*/
 
+	/*	//切片
+		arr := [...]int{32, 54, 76, 12, 76}
+		fmt.Print(arr, arr[1:4]) //从数组中生成切片
+		//结果：[32 54 76 12 76] [54 76 12]
+		fmt.Print(arr[:])
+		//空切片
+		fmt.Print(arr[0:0])
+		//自定义切片,添加元素
+		var nameLists []string
+		nameLists = append(nameLists, "xxj", "kk")
+		fmt.Print(nameLists)
+		//切片判空
+		fmt.Println(nameLists == nil)*/
+
+	/*	//make声明切片
+		ints := make([]int, 3, 10)
+		fmt.Print(len(ints)) //3
+		ints = append(ints, 9, 6, 3)
+		fmt.Print(ints) //[0 0 0 9 6 3]*/
+
+	/*	//切片初始化
+		var s []int            //切片声明，len = cap = 0
+		s = []int{}            //初始化，len = cap = 0
+		s = make([]int, 3)     //初始化，len = cap = 3
+		s = make([]int, 3, 5)  //初始化，len = 3, cap = 5
+		s = []int{1, 2, 34, 5} //len = cap =4
+		s2d := [][]int{
+			{1}, {2, 4}, //二维数组各行的列数相等，但二维切片各行的len可以不等
+		}*/
+
+	coef_cap()
+}
+
+// append函数扩容策略
+func coef_cap() {
+	s := make([]int, 0, 5)
+	nowCap := cap(s)
+	for i := 0; i < 100; i++ {
+		s = append(s, i)
+		afterCap := cap(s)
+		if afterCap > nowCap {
+			fmt.Printf("cap %d ---> %d\n", nowCap, afterCap)
+			nowCap = afterCap
+		}
+	}
 }
