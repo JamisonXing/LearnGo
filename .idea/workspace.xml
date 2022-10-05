@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a76c92c8-9cc8-4790-bbea-9f22d71c7f16" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/demo2.go" beforeDir="false" afterPath="$PROJECT_DIR$/hello/demo2.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;yiiguxing.plugin.translate&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -68,7 +67,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Go 构建.go build demo3.go">
+  <component name="RunManager" selected="Go 构建.go build interfaceTest.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="LearnGO" />
       <working_directory value="$PROJECT_DIR$" />
@@ -78,20 +77,12 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build demo1.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build deepUnderstand.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="LearnGO" />
       <working_directory value="$PROJECT_DIR$/hello" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/hello/demo1.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build demo2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="LearnGO" />
-      <working_directory value="$PROJECT_DIR$/hello" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/hello/demo2.go" />
+      <filePath value="$PROJECT_DIR$/hello/deepUnderstand.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build demo3.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -102,21 +93,29 @@
       <filePath value="$PROJECT_DIR$/hello/demo3.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build demo4.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LearnGO" />
+      <working_directory value="$PROJECT_DIR$/hello" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/hello/demo4.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build hello" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="LearnGO" />
       <working_directory value="$PROJECT_DIR$/hello" />
       <kind value="PACKAGE" />
       <package value="hello" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/hello/main.go" />
+      <filePath value="$PROJECT_DIR$/hello/interfaceTest.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build interfaceTest.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="LearnGO" />
       <working_directory value="$PROJECT_DIR$/hello" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/hello/main.go" />
+      <filePath value="$PROJECT_DIR$/hello/interfaceTest.go" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -131,10 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build interfaceTest.go" />
+        <item itemvalue="Go 构建.go build hello" />
+        <item itemvalue="Go 构建.go build deepUnderstand.go" />
+        <item itemvalue="Go 构建.go build demo4.go" />
         <item itemvalue="Go 构建.go build demo3.go" />
-        <item itemvalue="Go 构建.go build demo2.go" />
-        <item itemvalue="Go 构建.go build demo1.go" />
-        <item itemvalue="Go 构建.go build main.go" />
       </list>
     </recent_temporary>
   </component>
