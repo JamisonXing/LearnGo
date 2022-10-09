@@ -59,7 +59,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;goland.project.structure&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -67,7 +67,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Go 构建.go build interfaceTest.go">
+  <component name="RunManager" selected="Go 构建.go build again.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="LearnGO" />
       <working_directory value="$PROJECT_DIR$" />
@@ -77,20 +77,20 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build again.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LearnGO" />
+      <working_directory value="$PROJECT_DIR$/hello" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/hello/again.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build deepUnderstand.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="LearnGO" />
       <working_directory value="$PROJECT_DIR$/hello" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/hello/deepUnderstand.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build demo3.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="LearnGO" />
-      <working_directory value="$PROJECT_DIR$/hello" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/hello/demo3.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build demo4.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -104,7 +104,7 @@
     <configuration name="go build hello" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="LearnGO" />
       <working_directory value="$PROJECT_DIR$/hello" />
-      <kind value="PACKAGE" />
+      <kind value="FILE" />
       <package value="hello" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/hello/interfaceTest.go" />
@@ -116,6 +116,14 @@
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/hello/interfaceTest.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="LearnGO" />
+      <working_directory value="$PROJECT_DIR$/hello" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/hello/main.go" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -130,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go 构建.go build interfaceTest.go" />
+        <item itemvalue="Go 构建.go build again.go" />
         <item itemvalue="Go 构建.go build hello" />
+        <item itemvalue="Go 构建.go build interfaceTest.go" />
         <item itemvalue="Go 构建.go build deepUnderstand.go" />
         <item itemvalue="Go 构建.go build demo4.go" />
-        <item itemvalue="Go 构建.go build demo3.go" />
       </list>
     </recent_temporary>
   </component>
