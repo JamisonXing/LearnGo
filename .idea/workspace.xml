@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a76c92c8-9cc8-4790-bbea-9f22d71c7f16" name="变更" comment="变更">
+      <change beforePath="$PROJECT_DIR$/.idea/LearnGO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LearnGO.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TonyBaiGo/bookstore/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/TonyBaiGo/bookstore/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TonyBaiGo/bookstore/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/TonyBaiGo/bookstore/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/hello/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hello/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/hello/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Go File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -41,35 +46,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "configurable..is.expanded": "true",
-    "configurable.GoLibrariesConfigurable.is.expanded": "true",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/jamison/golang/LearnGo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "go.sdk"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;configurable..is.expanded&quot;: &quot;true&quot;,
+    &quot;configurable.GoLibrariesConfigurable.is.expanded&quot;: &quot;true&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jamison/coding/golang/LearnGo/TonyBaiGo/bookstore&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.goide.configuration.GoProjectSettingsConfigurable&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected="Go Build.go build main.go">
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TonyBaiGo/bookstore" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gin-project/template/index" />
+      <recent name="$PROJECT_DIR$/gin-project/template/news" />
+      <recent name="$PROJECT_DIR$/TonyBaiGo/bookstore/store" />
+      <recent name="$PROJECT_DIR$/TonyBaiGo/simple-http-server" />
+      <recent name="$PROJECT_DIR$/TonyBaiGo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go 构建.go build gin-project">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="LearnGO" />
       <working_directory value="$PROJECT_DIR$" />
@@ -79,53 +97,38 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build again.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build bookstore/cmd/bookstore" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="LearnGO" />
-      <working_directory value="$PROJECT_DIR$/hello" />
-      <kind value="FILE" />
+      <working_directory value="$PROJECT_DIR$/TonyBaiGo/bookstore" />
+      <kind value="PACKAGE" />
+      <package value="bookstore/cmd/bookstore" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/hello/again.go" />
+      <filePath value="$PROJECT_DIR$/TonyBaiGo/bookstore/cmd/bookstore/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build deepUnderstand.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build gin-project" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="LearnGO" />
-      <working_directory value="$PROJECT_DIR$/hello" />
-      <kind value="FILE" />
+      <working_directory value="$PROJECT_DIR$/gin-project" />
+      <kind value="PACKAGE" />
+      <package value="gin-project" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/hello/deepUnderstand.go" />
+      <filePath value="$PROJECT_DIR$/gin-project/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build demo4.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="LearnGO" />
-      <working_directory value="$PROJECT_DIR$/hello" />
+      <working_directory value="$PROJECT_DIR$/gin-project" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/hello/demo4.go" />
+      <filePath value="$PROJECT_DIR$/gin-project/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build hello" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="LearnGO" />
-      <working_directory value="$PROJECT_DIR$/hello" />
-      <kind value="FILE" />
-      <package value="hello" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/hello/interfaceTest.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build interfaceTest.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="LearnGO" />
-      <working_directory value="$PROJECT_DIR$/hello" />
+      <working_directory value="$PROJECT_DIR$/TonyBaiGo" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/hello/interfaceTest.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="LearnGO" />
-      <working_directory value="$PROJECT_DIR$/hello" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/hello/main.go" />
+      <filePath value="$PROJECT_DIR$/TonyBaiGo/main.go" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -138,9 +141,16 @@
       <framework value="gotest" />
       <method v="2" />
     </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LearnGo/gin-project/template/index/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go 构建.go build gin-project" />
+        <item itemvalue="Go 构建.go build main.go (1)" />
+        <item itemvalue="JavaScript 调试.index.html" />
+        <item itemvalue="Go 构建.go build bookstore/cmd/bookstore" />
+        <item itemvalue="Go 构建.go build main.go (2)" />
       </list>
     </recent_temporary>
   </component>
