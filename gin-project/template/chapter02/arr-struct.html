@@ -1,0 +1,16 @@
+{{define "chapter02/arr-struct.html"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+{{range $v := .}}
+  {{$v.Id}}
+  {{$v.Name}}
+<br>
+{{end}}
+</body>
+</html>
+{{end}}

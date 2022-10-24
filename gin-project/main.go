@@ -1,16 +1,11 @@
 package main
 
-import "github.com/gin-gonic/gin"
-
-func Hello(ctx *gin.Context) {
-	//ctx.String(200, "hello gin")
-	name := "xxj"
-	ctx.HTML(200, "index/index.html", name)
-}
-
-func User(ctx *gin.Context) {
-	ctx.HTML(200, "user/user.html", nil)
-}
+import (
+	"gin-project/chapter01"
+	"gin-project/chapter02"
+	"github.com/gin-gonic/gin"
+	"net/http"
+)
 
 func main() {
 	router := gin.Default()
@@ -21,10 +16,22 @@ func main() {
 	})*/
 
 	router.LoadHTMLGlob("template/**/*")
-	//router.LoadHTMLFiles("index.html")
+	//router.LoadH TMLFiles("index.html")
 
-	router.GET("/", Hello)
-	router.GET("/user", User)
+	//router.Static("/front", "static")
+	router.StaticFS("/static", http.Dir("static"))
+
+	router.GET("/", chapter01.Hello)
+	router.GET("/user", chapter02.User)
+	router.GET("/user_struct", chapter02.UserInforStruct)
+	router.GET("/arr", chapter02.ArrController)
+	router.GET("/arrStruct", chapter02.ArrStruct)
+
+	router.GET("/param1/:id", chapter02.Param1)
+	router.GET("/param2/*id", chapter02.Param2)
+	router.GET("/query", chapter02.GetQueryData)
+	router.GET("/query_arr", chapter02.GetQueryArrData)
+	router.GET("/query_map", chapter02.GetQueryMapData)
 
 	router.Run(":9000")
 }
