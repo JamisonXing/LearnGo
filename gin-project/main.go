@@ -33,5 +33,8 @@ func main() {
 	router.GET("/query_arr", chapter02.GetQueryArrData)
 	router.GET("/query_map", chapter02.GetQueryMapData)
 
-	router.Run(":9000")
+	router.GET("/to_user_add", chapter02.ToUserAdd)
+	router.POST("/do_user_add", chapter02.DoUserAdd)
+
+	router.Run(":8080")
 }

@@ -1,6 +1,7 @@
 package chapter02
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -76,4 +77,20 @@ func GetQueryArrData(ctx *gin.Context) {
 func GetQueryMapData(ctx *gin.Context) {
 	user := ctx.QueryMap("user")
 	ctx.String(http.StatusOK, "xxj, %s", user)
+}
+
+func ToUserAdd(ctx *gin.Context) {
+	ctx.HTML(http.StatusOK, "chapter02/user_add.html", nil)
+}
+func DoUserAdd(ctx *gin.Context) {
+	username := ctx.PostForm("username")
+	password := ctx.PostForm("password")
+
+	favoriteArr := ctx.PostFormArray("favorite")
+	userMap := ctx.PostFormMap("user")
+	fmt.Println(username)
+	fmt.Println(password)
+	fmt.Println(favoriteArr)
+	fmt.Println(userMap)
+	ctx.String(http.StatusOK, "添加成功")
 }

@@ -1,0 +1,29 @@
+{{define "chapter02/user_add.html"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+用户添加页面<br>
+<form action="/do_user_add" method="post">
+  userName:<input type="text" name="username"><br>
+  passWord:<input type="text" name="password"><br>
+
+  basketball：<input type="checkbox" name="favorite" value="basketball">
+  soccer：<input type="checkbox" name="favorite" value="soccer">
+  pingpong：<input type="checkbox" name="favorite" value="pingpong">
+  baseball：<input type="checkbox" name="favorite" value="baseball">
+
+  <br>
+  addr:<input type="text" name="user[addr]"><br>
+  phone:<input type="text" name="user[phone]"><br>
+
+  <br>
+
+  <input type="submit" value="submit">
+</form>
+</body>
+</html>
+{{end}}
