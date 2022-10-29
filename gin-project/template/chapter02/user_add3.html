@@ -1,0 +1,47 @@
+ {{define "chapter02/user_add3.html"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+用户添加页面<br>
+<form>
+  userName:<input type="text" id="username"><br>
+  passWord:<input type="password" id="password"><br>
+  age:<input type="text" id="age"><br>
+  <input type="button" value="submit" id="add_btn">
+</form>
+
+<script>
+  var add_btn = document.getElementById("add_btn")
+  add_btn.onclick = function(){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var age = document.getElementById("age").value;
+    $.ajax({
+      url:"/do_user_add3",
+      type:"POST",
+      data:{
+        "username" : username,
+        "password" : password,
+        "age" : age
+      },
+
+
+      success:function (data) {
+        alert(data["code"]);
+        alert(data["msg"]);
+      },
+      fail:function (data) {
+
+      }
+    })
+  }
+</script>
+</body>
+</html>
+{{end}}

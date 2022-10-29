@@ -6,42 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a76c92c8-9cc8-4790-bbea-9f22d71c7f16" name="变更" comment="变更">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/6f7d6d48ec63772a397a4dfcd3c761f3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/GO.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/c9b7cdd2655b0597093d5a03691eaaf7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/ff52629c11fa70b6f2aa25ab2a688ae9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/029a53d826e2284387a58ae5d61ffc46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/151b0c662870a9cdc7e3d337eabef318.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/223f0d1b06544028dd99d722c5ac6b01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/300d20aae1370c2c1fad697936578967.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/38b0f4231c26532322486e4efaec57d6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/395f5aa0363ebf02732e39a374a7bc77.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/4bd02ef00f6d5c828420509fad8566d2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/6058ae797205b624b17d10a28ac4042a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/614cede324cac3bd5d7fdbc08c3762c1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/66e2fb2234162d87aa5bdb9cb2928738.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/78fd59962ea3575ae2ac076f7d5d9cc4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/79c2548d75ab503cc906d30e00bdff8e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/7a2e7352410f5c3989f834f6290722d8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/8891f9384993dbbe7d546aaf05e3ae2a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/8f1e9e37a89fb858dd35074fb8e6a42c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/af2cee39565da43f36cf47d627dd9f76.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/d5b47466352f2f83f620846a24ef334a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/e19c1358d58bdd1a71ae3a6975f6be41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/e20074ec4ff2c0a574665b7871134b77.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/e337efc4e3ee0289ddd0fcfd9eeda1d7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/fc4464f29c1c78743712a8125896d388.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GO/深入理解Go底层原理，重写redis中间件/深入理解Go底层原理，重写redis中间件.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gin-project/chapter02/chapter02.go" beforeDir="false" afterPath="$PROJECT_DIR$/gin-project/chapter02/chapter02.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gin-project/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/gin-project/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/again.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/deepUnderstand.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/demo1.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/demo2.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/demo3.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/interfaceTest.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/panic-recover/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/panic-recover/src/panic-recover.go" beforeDir="false" afterPath="$PROJECT_DIR$/other/panic-recover/src/panic-recover.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,17 +76,18 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/gin-project/template/chapter02" />
+      <recent name="$PROJECT_DIR$/other/value-pointer/value-pointer" />
       <recent name="$PROJECT_DIR$/TonyBaiGo/bookstore" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/other/panic-recover/src" />
+      <recent name="$PROJECT_DIR$/other/value-pointer/value-pointer" />
       <recent name="$PROJECT_DIR$/other/raceProblem" />
       <recent name="$PROJECT_DIR$/gin-project/template/index" />
       <recent name="$PROJECT_DIR$/gin-project/template/news" />
-      <recent name="$PROJECT_DIR$/TonyBaiGo/bookstore/store" />
-      <recent name="$PROJECT_DIR$/TonyBaiGo/simple-http-server" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build sumOfMultipleIntegers.go">
+  <component name="RunManager" selected="Go 构建.go build gin-project">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="LearnGO" />
       <working_directory value="$PROJECT_DIR$" />
@@ -126,22 +95,6 @@
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build SumOfMultipleIntegers.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="LearnGO" />
-      <working_directory value="$PROJECT_DIR$/other" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/other/workTreadPool/SumOfMultipleIntegers.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build chapter02.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="LearnGO" />
-      <working_directory value="$PROJECT_DIR$/gin-project" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/gin-project/chapter02/chapter02.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build gin-project" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -153,21 +106,37 @@
       <filePath value="$PROJECT_DIR$/gin-project/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build other" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build map-memory-leak" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="LearnGO" />
-      <working_directory value="$PROJECT_DIR$/other" />
+      <working_directory value="$PROJECT_DIR$/other/map-memory-leak" />
       <kind value="PACKAGE" />
-      <package value="other" />
+      <package value="map-memory-leak" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/other/main.go" />
+      <filePath value="$PROJECT_DIR$/other/map-memory-leak/test00.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build sumOfMultipleIntegers.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build map_memory_leak.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="LearnGO" />
-      <working_directory value="$PROJECT_DIR$/other" />
+      <working_directory value="$PROJECT_DIR$/other/map-memory-leak" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/other/workTreadPool/sumOfMultipleIntegers.go" />
+      <filePath value="$PROJECT_DIR$/other/map-memory-leak/map_memory_leak.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build test00.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LearnGO" />
+      <working_directory value="$PROJECT_DIR$/other/map-memory-leak" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/other/map-memory-leak/test00.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build test01.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LearnGO" />
+      <working_directory value="$PROJECT_DIR$/other/map-memory-leak" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/other/map-memory-leak/test01.go" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -182,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go 构建.go build sumOfMultipleIntegers.go" />
-        <item itemvalue="Go 构建.go build SumOfMultipleIntegers.go" />
         <item itemvalue="Go 构建.go build gin-project" />
-        <item itemvalue="Go 构建.go build other" />
-        <item itemvalue="Go 构建.go build chapter02.go" />
+        <item itemvalue="Go 构建.go build test01.go" />
+        <item itemvalue="Go 构建.go build test00.go" />
+        <item itemvalue="Go 构建.go build map_memory_leak.go" />
+        <item itemvalue="Go 构建.go build map-memory-leak" />
       </list>
     </recent_temporary>
   </component>

@@ -1,4 +1,4 @@
-package src
+package main
 
 import (
 	"errors"
@@ -22,4 +22,8 @@ func innerFunc() {
 	}()*/
 
 	panic(errors.New("an intended fatal error"))
+}
+
+func main() {
+	OuterFunc()
 }

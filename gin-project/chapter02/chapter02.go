@@ -7,10 +7,10 @@ import (
 )
 
 type UserInfo struct {
-	Id   int    `json:"id"`
-	Name string `json:"name"`
-	Age  int    `json:"age"`
-	Addr string `json:"addr"`
+	Id   int    `form:"id"`
+	Name string `form:"username"`
+	Age  int    `form:"age"`
+	Addr string `form:"addr"`
 }
 
 func User(ctx *gin.Context) {
@@ -93,4 +93,52 @@ func DoUserAdd(ctx *gin.Context) {
 	fmt.Println(favoriteArr)
 	fmt.Println(userMap)
 	ctx.String(http.StatusOK, "添加成功")
+}
+
+func ToUserAdd2(ctx *gin.Context) {
+	ctx.HTML(http.StatusOK, "chapter02/user_add2.html", nil)
+}
+func DoUserAdd2(ctx *gin.Context) {
+	username := ctx.PostForm("username")
+	password := ctx.PostForm("password")
+	age := ctx.DefaultPostForm("age", "22")
+
+	fmt.Println(username)
+	fmt.Println(password)
+	fmt.Println(age)
+
+	ctx.String(http.StatusOK, "添加成功")
+}
+
+func ToUserAdd3(ctx *gin.Context) {
+	ctx.HTML(http.StatusOK, "chapter02/user_add3.html", nil)
+}
+func DoUserAdd3(ctx *gin.Context) {
+	username := ctx.PostForm("username")
+	password := ctx.PostForm("password")
+	age := ctx.PostForm("age")
+
+	fmt.Println(username)
+	fmt.Println(password)
+	fmt.Println(age)
+
+	/*	mapData := map[string]interface{}{
+		"code": 200,
+		"msg":  "success",
+	}*/
+	ctx.JSON(http.StatusOK, gin.H{"code": 200, "msg": "success"})
+}
+
+func ToUserAdd4(ctx *gin.Context) {
+	ctx.HTML(http.StatusOK, "chapter02/user_add4.html", nil)
+}
+
+func DoUserAdd4(ctx *gin.Context) {
+	var userInfo UserInfo
+	err := ctx.ShouldBind(&userInfo) //参数绑定
+	fmt.Println(err)
+	fmt.Println(userInfo)
+
+	ctx.String(http.StatusOK, "绑定成功")
+
 }

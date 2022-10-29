@@ -36,5 +36,13 @@ func main() {
 	router.GET("/to_user_add", chapter02.ToUserAdd)
 	router.POST("/do_user_add", chapter02.DoUserAdd)
 
+	router.GET("/to_user_add2", chapter02.ToUserAdd2)
+	router.POST("/do_user_add2", chapter02.DoUserAdd2)
+
+	router.GET("/to_user_add3", chapter02.ToUserAdd3)
+	router.POST("/do_user_add3", chapter02.DoUserAdd3)
+
+	router.GET("/to_user_add4", chapter02.ToUserAdd4)
+	router.POST("/do_user_add4", chapter02.DoUserAdd4)
 	router.Run(":8080")
 }
