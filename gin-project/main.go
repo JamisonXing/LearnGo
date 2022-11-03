@@ -44,5 +44,15 @@ func main() {
 
 	router.GET("/to_user_add4", chapter02.ToUserAdd4)
 	router.POST("/do_user_add4", chapter02.DoUserAdd4)
+
+	router.GET("/test_to_upload1", chapter02.ToUpload1)
+	router.POST("/test_do_upload1", chapter02.DoUpload1)
+
+	router.GET("/test_to_upload2", chapter02.ToUpload2)
+	router.POST("/test_do_upload2", chapter02.DoUpload2)
+
+	router.GET("/test_to_upload3", chapter02.ToUpload3)
+	router.POST("/test_do_upload3", chapter02.DoUpload3)
+
 	router.Run(":8080")
 }
