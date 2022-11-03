@@ -1,6 +1,7 @@
 package chapter02
 
 import (
+	"fmt"
 	"gin-project/proto/user"
 	"github.com/gin-gonic/gin"
 	"net/http"
@@ -76,4 +77,17 @@ func OutputProto(ctx *gin.Context) {
 	}
 
 	ctx.ProtoBuf(http.StatusOK, userData)
+}
+
+// RedirectA 重定向到B
+func RedirectA(ctx *gin.Context) {
+	fmt.Println("this router a")
+
+	ctx.Redirect(http.StatusFound, "/redirect_b") //不能用200,用302
+	//ctx.Redirect(http.StatusFound, "https://www.bilibili.com/")
+
+}
+func RedirectB(ctx *gin.Context) {
+	fmt.Println("this router b")
+	ctx.String(http.StatusOK, "this router b")
 }

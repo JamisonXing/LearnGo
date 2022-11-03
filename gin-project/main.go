@@ -66,5 +66,8 @@ func main() {
 	router.GET("/output_yaml", chapter02.OutputYAML)
 	router.GET("/output_proto", chapter02.OutputProto)
 
+	router.GET("/redirect_a", chapter02.RedirectA)
+	router.GET("/redirect_b", chapter02.RedirectB)
+
 	router.Run(":8080")
 }
