@@ -1,0 +1,54 @@
+{{define "chapter02/test_upload4.html"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+ajax单文件上传<br>
+<form>
+    <input type="file" class="file"><br> <!--不能用id，id唯一-->
+    <input type="file" class="file"><br>
+    <input type="text" id="name"><br>
+    <input type="button" value="submit" id="btn_upload"><br>
+</form>
+
+<script>
+    var btn_upload = document.getElementById("btn_upload");
+    var name = document.getElementById("name").value;
+    btn_upload.onclick = function (ev) {
+        var formData = new FormData();
+
+        var files_tag = $(".file"); //类选择器
+        /*console.log($(".file"));
+        return  //停止执行下面语句*/
+
+        for(var i = 0; i < files_tag.length; i++) {
+            formData.append("file",files_tag[i].files[0])
+        }
+
+        formData.append("name", name)
+
+        $.ajax({
+            url:"/test_do_upload4",
+            type:"POST",
+            data:formData,
+            contentType:false,  //设置为true时候，提交的时候不会序列化data，而是直接使用data
+            processData:false,  // 设置为false为了避免jquery对其操作，从而失去分界符
+            success:function (data) {
+                alert(data["code"])
+                alert(data["msg"])
+                window.location.href = "https://bilibili.com"
+            },
+            fail:function (data) {
+
+            }
+        })
+
+    }
+</script>
+</body>
+</html>
+{{end}}

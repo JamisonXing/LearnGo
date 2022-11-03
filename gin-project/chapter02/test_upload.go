@@ -65,3 +65,29 @@ func DoUpload3(ctx *gin.Context) { //ajax单文件上传
 	ctx.String(http.StatusOK, file.Filename+"上传成功"+"\n")
 
 }
+
+func ToUpload4(ctx *gin.Context) {
+	ctx.HTML(http.StatusOK, "chapter02/test_upload4.html", nil)
+}
+func DoUpload4(ctx *gin.Context) { //ajax多文件上传
+	form, _ := ctx.MultipartForm()
+	files := form.File["file"]
+
+	name := ctx.PostForm("name")
+	fmt.Println(name)
+
+	for _, file := range files {
+		fmt.Println(file.Filename)
+		//防止文件重复,加上那个时间戳
+		timeUnixInt := time.Now().Unix()
+		timeUnixStr := strconv.FormatInt(timeUnixInt, 10)
+		//保存
+		dst := "upload/" + timeUnixStr + "-" + file.Filename
+		ctx.SaveUploadedFile(file, dst)
+	}
+
+	ctx.JSON(http.StatusOK, gin.H{
+		"code": 200,
+		"msg":  "submit success",
+	})
+}
