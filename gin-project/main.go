@@ -5,6 +5,7 @@ import (
 	"gin-project/chapter02"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"time"
 )
 
 func main() {
@@ -69,5 +70,17 @@ func main() {
 	router.GET("/redirect_a", chapter02.RedirectA)
 	router.GET("/redirect_b", chapter02.RedirectB)
 
-	router.Run(":8080")
+	//router.Run(":8080")
+	//http.ListenAndServe("localhost:8080", router)
+
+	//自定义http配置
+	s := &http.Server{
+		Addr:         ":8080",
+		Handler:      router,
+		ReadTimeout:  10 * time.Second,
+		WriteTimeout: 5 * time.Second,
+	}
+	if err := s.ListenAndServe(); err != nil {
+		panic("start err")
+	}
 }
