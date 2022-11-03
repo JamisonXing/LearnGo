@@ -1,0 +1,15 @@
+code: 200
+html: <b>Hello, world!</b>
+msg: submit success
+tag: <br>
+
+
+#yaml格式
+person:
+  name:
+    jamison
+  age:
+    20
+  love:
+    -football
+    -game

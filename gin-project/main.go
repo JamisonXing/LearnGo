@@ -57,5 +57,13 @@ func main() {
 	router.GET("/test_to_upload4", chapter02.ToUpload4)
 	router.POST("/test_do_upload4", chapter02.DoUpload4)
 
+	router.GET("/output_json", chapter02.OutputJson)
+	router.GET("/output_ascii_json", chapter02.OutputAsciiJson)
+	router.GET("/output_jsonp", chapter02.OutputJsonp)
+	router.GET("/output_pure_json", chapter02.OutputPureJson)
+	router.GET("/output_secure_json", chapter02.OutputSecureJson)
+	router.GET("/output_xml", chapter02.OutputXML)
+	router.GET("/output_yaml", chapter02.OutputYAML)
+
 	router.Run(":8080")
 }
