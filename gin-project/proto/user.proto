@@ -1,0 +1,9 @@
+syntax = "proto3";  //定义版本号
+option go_package = "./user";
+
+message User {
+  string name = 1; //这个=不是赋值，是序号的意思
+  int32 age = 2;
+}
+
+//message类型：message,service,enum

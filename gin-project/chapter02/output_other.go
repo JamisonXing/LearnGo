@@ -1,6 +1,7 @@
 package chapter02
 
 import (
+	"gin-project/proto/user"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -60,10 +61,19 @@ func OutputXML(ctx *gin.Context) {
 }
 
 func OutputYAML(ctx *gin.Context) {
-	ctx.YAML(http.StatusOK, gin.H{ //
+	ctx.YAML(http.StatusOK, gin.H{
 		"code": 200,
 		"tag":  "<br>",
 		"msg":  "submit success",
 		"html": "<b>Hello, world!</b>",
 	})
+}
+
+func OutputProto(ctx *gin.Context) {
+	userData := &user.User{
+		Name: "jamison",
+		Age:  20,
+	}
+
+	ctx.ProtoBuf(http.StatusOK, userData)
 }

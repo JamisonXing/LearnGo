@@ -64,6 +64,7 @@ func main() {
 	router.GET("/output_secure_json", chapter02.OutputSecureJson)
 	router.GET("/output_xml", chapter02.OutputXML)
 	router.GET("/output_yaml", chapter02.OutputYAML)
+	router.GET("/output_proto", chapter02.OutputProto)
 
 	router.Run(":8080")
 }
