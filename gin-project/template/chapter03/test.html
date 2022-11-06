@@ -1,0 +1,80 @@
+{{define "chapter03/test.html"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+模板语法
+<!--访问当前位置上下文 . -->
+<!--引用当前模板根级的上下文 $ -->
+<!--引用模板中的根级的上下文 $. -->
+{{.name}} <br>
+
+{{range .arr}}
+    {{.}}
+    {{$.name}}
+{{end}}
+<br>
+{{range $i, $v := .arr}}
+    {{$i}}
+    {{$v}}
+<br>
+{{end}}
+
+<!--对符号的支持，字符串，原始字符串，字节，nil-->
+{{"i'm string"}}
+<br>
+{{`a`}}
+<br>
+{{'a'}}
+<br>
+{{print nil}} <!--直接写nil会报错-->
+
+
+<!--自定义变量，只能在当前模板中使用-->
+{{$addr := "AUST"}} <br>
+{{$addr}}
+<br>
+
+<!--pipline-->
+{{.name | len}}
+<br>
+
+<!--if else-->
+{{if .name}}   <!--如果存在name就执行-->
+    name is {{.name}}
+{{else}}
+    welcome stranger
+{{end}}
+
+<br>
+
+<!--range也支持else-->
+{{range .arr}}
+    {{.}}
+{{else}}
+    no data
+{{end}}
+
+<!--with:伴随 , 用于重定向pipline, 同样支持else-->
+{{with .article}}
+    {{.Id}}
+<br>
+    {{.Title}}
+<br>
+    {{.Desc}}
+<br>
+{{else}}
+    no data
+{{end}}
+
+<br>
+
+<!--引入其他template,并共享数据-->
+{{template "chapter03/base.html" .}}
+</body>
+</html>
+
+{{end}}
