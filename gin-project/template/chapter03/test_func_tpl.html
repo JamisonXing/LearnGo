@@ -1,0 +1,85 @@
+{{define "chapter03/test_func_tpl.html"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+here is template func
+<br>
+<!--各种print函数-->
+{{print "jamison"}}
+<br>
+{{printf "name:%s,age:%d,addr:%s" "jamsion" 20 "xxx"}}
+<br>
+{{println "jamison"}}
+<br>
+
+<!--管道符号 | , 在函数之间传输数据-->
+{{"jamison like" | printf "%s"}}
+<br>
+{{"jamison like" | len}}
+<br>
+
+
+{{printf "name:%s,addr:%s" "jamsion" (printf "%s-%s" "beijing" "westCity")}}
+<br>
+
+<!--and 只要有一个为空则为空，如果都不为空则返回最后一个-->
+{{and .arr .age}}
+<br>
+
+<!--or 只要有一个不为空则返回第一个不为空的-->
+{{or .arr .age}}
+<br>
+
+<!--index 通过 下标/key 取值-->
+{{index .sliceData 1}}
+<br>
+{{index .mapData "name"}}
+<br>
+{{index "jamison" 0}}
+<br>
+
+<!--len 计算长度-->
+{{len "jamison"}}
+<br>
+
+<!--not 取反-->
+{{not .name}} <!--因为.name存在,not再取返为false-->
+<br>
+
+<!--urlquery 有些符号在url中是不能直接传递的，如果要在url中传递这种特殊符号，那么就需要使用他们的编码了,结果%后面的是16进制-->
+{{urlquery "https://www.baidu.com"}}
+<br>
+
+<!--eq 相等/ne 不等/lt 小于/le 小于等于/gt 大于/ge 大于等于, 只有eq支持多个参数，-->
+{{eq 18 19}}
+<br>
+{{ne 18 19}}
+<br>
+{{le 18 19}}
+<br>
+{{eq 1 2 3 4}}
+<br>
+
+<!--Format 时间格式化-->
+{{.timeNow.Format "2006-01-02 15:04:05"}}
+<br>
+
+<!--html 转义html标签-->
+
+<!--js 返回用javaScript的escape(对字符串进行编码)处理后的文本-->
+{{js "<script> alert(11) </script>"}}
+
+
+<!--自定模板函数-->
+
+
+
+
+</body>
+</html>
+{{end}}
+
