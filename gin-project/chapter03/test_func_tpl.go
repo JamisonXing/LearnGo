@@ -3,6 +3,7 @@ package chapter03
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"html/template"
 	"net/http"
 	"time"
 )
@@ -30,4 +31,23 @@ func FuncTpl(ctx *gin.Context) {
 		"timeNow":   timeNow,
 	}
 	ctx.HTML(http.StatusOK, "chapter03/test_func_tpl.html", m)
+}
+
+// AddNum 第一步：定义函数
+func AddNum(num1, num2 int) int {
+	return num1 + num2
+}
+
+// SubStr 截取字符串（字符串过长显式不下） 只显示7个字符
+func SubStr(str string, n int) string {
+	strLen := len(str)
+	if n >= strLen {
+		return str
+	}
+	subStr := str[0:n]
+	return subStr + "..."
+}
+
+func Safe(str string) template.HTML { //将字符串转义为html
+	return template.HTML(str)
 }

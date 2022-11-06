@@ -3,7 +3,9 @@ package main
 import (
 	"gin-project/chapter01"
 	"gin-project/chapter02"
+	"gin-project/chapter03"
 	"github.com/gin-gonic/gin"
+	"html/template"
 	"net/http"
 	"time"
 )
@@ -11,6 +13,13 @@ import (
 func main() {
 	router := gin.Default()
 	//router := gin.New()
+
+	//自定义模板函数 第二步 setMap
+	router.SetFuncMap(template.FuncMap{
+		"add":    chapter03.AddNum,
+		"subStr": chapter03.SubStr,
+		"safe":   chapter03.Safe,
+	})
 
 	/*	router.GET("/", func(ctx *gin.Context) {
 		ctx.String(200, "hello gin")
@@ -69,6 +78,12 @@ func main() {
 
 	router.GET("/redirect_a", chapter02.RedirectA)
 	router.GET("/redirect_b", chapter02.RedirectB)
+
+	//模板语法
+	router.GET("/test_tpl", chapter03.TestSyntaxTpl)
+
+	//模板函数
+	router.GET("/test_func", chapter03.FuncTpl)
 
 	//router.Run(":8080")
 	//http.ListenAndServe("localhost:8080", router)

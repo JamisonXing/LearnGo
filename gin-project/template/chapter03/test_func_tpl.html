@@ -72,14 +72,19 @@ here is template func
 
 <!--js 返回用javaScript的escape(对字符串进行编码)处理后的文本-->
 {{js "<script> alert(11) </script>"}}
-
+<br>
 
 <!--自定模板函数-->
-
-
+{{add 1 3}}
+<br>
+{{subStr "xxfxxxxx" 44}}
+<br>
+{{safe "<a href='https://www.baidu.com'>baidu</a>"}}
 
 
 </body>
 </html>
 {{end}}
+
+
 
