@@ -4,7 +4,10 @@ import (
 	"gin-project/chapter01"
 	"gin-project/chapter02"
 	"gin-project/chapter03"
+	"gin-project/chapter04"
 	"github.com/gin-gonic/gin"
+	"github.com/gin-gonic/gin/binding"
+	"github.com/go-playground/validator"
 	"html/template"
 	"net/http"
 	"time"
@@ -24,6 +27,11 @@ func main() {
 	/*	router.GET("/", func(ctx *gin.Context) {
 		ctx.String(200, "hello gin")
 	})*/
+
+	//注册验证器
+	if v, ok := binding.Validator.Engine().(*validator.Validate); ok {
+		v.RegisterValidation("lenValid", chapter04.LenValid)
+	}
 
 	router.LoadHTMLGlob("template/**/*")
 	//router.LoadH TMLFiles("index.html")
@@ -84,6 +92,18 @@ func main() {
 
 	//模板函数
 	router.GET("/test_func", chapter03.FuncTpl)
+
+	//数据绑定
+	router.GET("/to_bind_form", chapter04.ToBindForm)
+	router.POST("/do_bind_form", chapter04.DoBindForm)
+	router.GET("/bind_query_string", chapter04.ToBindJson)
+	router.GET("/to_bind_json", chapter04.ToBindJson)
+	router.POST("/do_bind_json", chapter04.DoBindJson)
+	router.GET("/bind_uri/:name/:age/:addr", chapter04.BindUri)
+
+	//数据校验
+	router.GET("/to_valid", chapter04.ToValidData)
+	router.POST("/do_valid", chapter04.DoValidData)
 
 	//router.Run(":8080")
 	//http.ListenAndServe("localhost:8080", router)

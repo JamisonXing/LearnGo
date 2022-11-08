@@ -7,9 +7,9 @@ import (
 )
 
 type User struct {
-	Name string `form:"name" json:"name"`
-	Age  int    `form:"age" json:"age"`
-	Addr string `form:"addr" json:"addr"`
+	Name string `form:"name" json:"name" uri:"name"`
+	Age  int    `form:"age" json:"age" uri:"age"`
+	Addr string `form:"addr" json:"addr" uri:"addr"`
 }
 
 func ToBindForm(ctx *gin.Context) {

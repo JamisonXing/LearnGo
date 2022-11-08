@@ -3,14 +3,25 @@ package chapter04
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"github.com/go-playground/validator"
 	"net/http"
 )
 
 type Article struct {
-	Id      int    `form:"-"`
-	Title   string `form:"title" binding:"required"`
-	Content string `form:"content"`
-	Desc    string `form:"desc"`
+	Id      int     `form:"-"`
+	Title   string  `form:"title" binding:"lenValid"`
+	Content string  `form:"content" binding:"min=5"`
+	Desc    string  `form:"desc"`
+	Name    [][]int `binding:"dive,max=20,dive,required"` //嵌套验证
+}
+
+// LenValid 判断是不是大于6
+var LenValid validator.Func = func(fl validator.FieldLevel) bool {
+	data := fl.Field()
+
+	fmt.Println(data)
+
+	return true
 }
 
 func ToValidData(ctx *gin.Context) {
@@ -25,5 +36,4 @@ func DoValidData(ctx *gin.Context) {
 	}
 	fmt.Println(article)
 	ctx.String(http.StatusOK, "validation success", nil)
-
 }
