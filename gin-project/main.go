@@ -13,8 +13,10 @@ import (
 )
 
 func main() {
-	router := gin.Default()
-	//router := gin.New()
+	//router := gin.Default() //有中间件Logger(), Recovery()
+
+	router := gin.New()      //没有中间件
+	router.Use(gin.Logger()) //使用中间件
 
 	//自定义模板函数 第二步 setMap
 	router.SetFuncMap(template.FuncMap{
@@ -49,7 +51,11 @@ func main() {
 			v2.GET("/arr", chapter02.ArrController)
 		}*/
 
+	//路由分组
 	allRouter.Router(router)
+
+	//在路由之后使用中间件，要注意中间件的执行顺序
+	router.Use(gin.Recovery())
 
 	//router.GET("/", chapter01.Hello)
 	//router.GET("/user", chapter02.User)
