@@ -13,9 +13,11 @@ func Router(router *gin.Engine) {
 	cp02 := router.Group("/chapter02")
 	cp03 := router.Group("/chapter03")
 	cp04 := router.Group("/chapter04")
+	cp05 := router.Group("/chapter05")
 
 	chapter01.Router(cp01)
 	chapter02.Router(cp02)
 	chapter03.Router(cp03)
 	chapter04.Router(cp04)
+	chapter04.Router(cp05)
 }

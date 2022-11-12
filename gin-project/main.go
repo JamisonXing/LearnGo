@@ -3,6 +3,7 @@ package main
 import (
 	"gin-project/controller/chapter03"
 	"gin-project/controller/chapter04"
+	"gin-project/controller/chapter05"
 	allRouter "gin-project/router"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
@@ -13,10 +14,14 @@ import (
 )
 
 func main() {
-	//router := gin.Default() //有中间件Logger(), Recovery()
+	router := gin.Default() //有中间件Logger(), Recovery()
+	//router := gin.New()      //没有中间件
+	//router.Use(gin.Logger()) //使用中间件
 
-	router := gin.New()      //没有中间件
-	router.Use(gin.Logger()) //使用中间件
+	//全局中间件
+	router.Use(chapter05.Middleware01)   //方式一
+	router.Use(chapter05.Middleware02()) //方式二
+	router.Use(chapter05.Middleware03()) //方式二
 
 	//自定义模板函数 第二步 setMap
 	router.SetFuncMap(template.FuncMap{
@@ -55,7 +60,7 @@ func main() {
 	allRouter.Router(router)
 
 	//在路由之后使用中间件，要注意中间件的执行顺序
-	router.Use(gin.Recovery())
+	//router.Use(gin.Recovery())
 
 	//router.GET("/", chapter01.Hello)
 	//router.GET("/user", chapter02.User)
