@@ -19,9 +19,10 @@ func main() {
 	//router.Use(gin.Logger()) //使用中间件
 
 	//全局中间件
-	router.Use(chapter05.Middleware01)   //方式一
-	router.Use(chapter05.Middleware02()) //方式二
-	router.Use(chapter05.Middleware03()) //方式二
+	/*	router.Use(chapter05.Middleware01)   //方式一
+		router.Use(chapter05.Middleware02()) //方式二
+		router.Use(chapter05.Middleware03()) //方式二*/
+	router.Use(chapter05.Middleware01, chapter05.Middleware03(), chapter05.Middleware02())
 
 	//自定义模板函数 第二步 setMap
 	router.SetFuncMap(template.FuncMap{

@@ -18,7 +18,12 @@ func Middleware01(ctx *gin.Context) {
 func Middleware02() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
 		fmt.Println("custom middleware02--start")
-		//ctx.Next()
+
+		if true { //假设不满足某个条件
+			ctx.Abort() //终止调用整个链条
+		}
+		ctx.Next()
+
 		fmt.Println("custom middleware02--end")
 	}
 }
