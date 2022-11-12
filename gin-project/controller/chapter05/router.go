@@ -7,5 +7,6 @@ func Router(cp05 *gin.RouterGroup) {
 		"zs": "123456",
 		"ls": "12345",
 		"ww": "1234",
-	}), AuthTest)
+	}), gin.WrapF(WrapFTest), AuthTest)
+
 }
