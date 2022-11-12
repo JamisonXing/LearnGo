@@ -8,14 +8,14 @@ import (
 
 // Middleware01 第一种定义方式
 func Middleware01(ctx *gin.Context) {
-	start_time := time.Now()
+	startTime := time.Now()
 
 	fmt.Println("custom middleware01--start")
 
 	ctx.Next() //执行下一个中间件
 	fmt.Println("custom middleware01--end")
 
-	cost := time.Since(start_time) //计算请求耗时
+	cost := time.Since(startTime) //计算请求耗时
 	fmt.Println("request time is:", cost)
 }
 

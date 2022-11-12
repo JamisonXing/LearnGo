@@ -3,7 +3,6 @@ package main
 import (
 	"gin-project/controller/chapter03"
 	"gin-project/controller/chapter04"
-	"gin-project/controller/chapter05"
 	allRouter "gin-project/router"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
@@ -22,7 +21,7 @@ func main() {
 	/*	router.Use(chapter05.Middleware01)   //方式一
 		router.Use(chapter05.Middleware02()) //方式二
 		router.Use(chapter05.Middleware03()) //方式二*/
-	router.Use(chapter05.Middleware02())
+	//router.Use(chapter05.Middleware02())
 
 	//自定义模板函数 第二步 setMap
 	router.SetFuncMap(template.FuncMap{

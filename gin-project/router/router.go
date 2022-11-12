@@ -21,5 +21,5 @@ func Router(router *gin.Engine) {
 	chapter02.Router(cp02)
 	chapter03.Router(cp03)
 	chapter04.Router(cp04)
-	chapter04.Router(cp05)
+	chapter05.Router(cp05)
 }
