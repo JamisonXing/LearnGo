@@ -1,10 +1,13 @@
 package chapter02
 
-import "github.com/gin-gonic/gin"
+import (
+	"gin-project/controller/chapter05"
+	"github.com/gin-gonic/gin"
+)
 
 func Router(cp02 *gin.RouterGroup) {
 	cp02.GET("/user", User)
-	cp02.GET("/user_struct", UserInforStruct)
+	cp02.GET("/user_struct", chapter05.Middleware03(), UserInforStruct) //局部中间件
 	cp02.GET("/arr", ArrController)
 	cp02.GET("/arrStruct", ArrStruct)
 
