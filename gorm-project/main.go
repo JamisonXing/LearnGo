@@ -98,6 +98,15 @@ func DeleteInfo(db *gorm.DB, Any any, Id int) {
 	}
 }
 
+// 删除表
+func delTable(db *gorm.DB) {
+	if err := db.Migrator().DropTable("users"); err != nil {
+		fmt.Printf("dropTable fail\n")
+	} else {
+		fmt.Printf("dropTable success\n")
+	}
+}
+
 func main() {
 	user := &User{
 		Name:  "jamison",
@@ -109,7 +118,8 @@ func main() {
 	db := OpenDB()
 	CreateTable(db, user)
 	InsertInfo(db, user)
-	QueryByPrimaryKey(db, user, 2)
-	UpdateInfo(db, user, 2, "xxj")
-	DeleteInfo(db, user, 8)
+	QueryByPrimaryKey(db, user, 1)
+	UpdateInfo(db, user, 1, "xxj")
+	DeleteInfo(db, user, 1)
+	//delTable(db)
 }
