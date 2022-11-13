@@ -20,7 +20,7 @@ func main() {
 
 	//增加
 	db.Create(&models.User{
-		Id:    2,
+		Id:    1,
 		Name:  "zhangSan",
 		Age:   18,
 		Addr:  "xxx",
@@ -31,7 +31,7 @@ func main() {
 	//查询
 	var user models.User
 	//db.First(&user, 2) // 根据整型主键查找
-	db.First(&user, "name=?", "a")
+	db.First(&user, "id=?", "1")
 	fmt.Println(user)
 
 	//更新一条
@@ -45,6 +45,9 @@ func main() {
 		"Name": "a",
 		"Addr": "b",
 	})
+
+	//删除
+	db.Delete(&user)
 
 	//db.Migrator().DropTable("users")
 }
