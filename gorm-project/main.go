@@ -31,9 +31,20 @@ func main() {
 	//查询
 	var user models.User
 	//db.First(&user, 2) // 根据整型主键查找
-	db.First(&user, "name=?", "zhangSan")
+	db.First(&user, "name=?", "a")
 	fmt.Println(user)
 
-	//db.Migrator().DropTable("users")
+	//更新一条
+	db.Model(&user).Update("name", "jamison")
+	//更新多条数据
+	db.Model(&user).Updates(models.User{
+		Name: "ddd",
+		Addr: "ccc",
+	}) //仅仅更新非零值字段
+	db.Model(&user).Updates(map[string]any{
+		"Name": "a",
+		"Addr": "b",
+	})
 
+	//db.Migrator().DropTable("users")
 }
