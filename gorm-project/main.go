@@ -16,7 +16,7 @@ func main() {
 		log.Fatal(err)
 	}
 	//自动迁移
-	db.AutoMigrate(&models.User{})
+	db.AutoMigrate(&models.User{}, &models.GormModel{})
 
 	//增加
 	db.Create(&models.User{
