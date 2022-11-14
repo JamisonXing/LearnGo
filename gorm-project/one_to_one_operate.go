@@ -36,7 +36,13 @@ func main() {
 	//关联查询
 	//方式一
 	var userProfile relate_tables.UserProfile
-	db.First(&userProfile, 1)
-	db.Model(&userProfile).Association("User").Find(&userProfile.User)
+	db.Debug().First(&userProfile, 1)
+	db.Debug().Model(&userProfile).Association("User").Find(&userProfile.User)
 	fmt.Println(userProfile)
+
+	//方式二
+	var userProfile2 relate_tables.UserProfile
+	db.Preload("User").Find(&userProfile2, 2)
+	fmt.Println(userProfile2)
+
 }
