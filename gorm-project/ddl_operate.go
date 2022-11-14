@@ -15,6 +15,6 @@ func main() {
 		log.Fatal(err)
 	}
 	//自动迁移
-	db.AutoMigrate(&relate_tables.UserProfile{}, &relate_tables.User{})
+	db.AutoMigrate(&relate_tables.Article2{}, &relate_tables.Tag{})
 
 }

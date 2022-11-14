@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"gorm-project/models/relate_tables"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
@@ -17,18 +18,25 @@ func main() {
 	//自动迁移
 	db.AutoMigrate(&relate_tables.UserProfile{}, &relate_tables.User{})
 
-	userProfile := relate_tables.UserProfile{
-		Pic:   "1.jpg",
-		CPic:  "2.jpg",
-		Phone: "150xxx",
-		User: relate_tables.User{
-			Id:   0,
-			Name: "jamison",
-			Age:  20,
-			Addr: "xc",
-		},
-	}
+	//增加
+	/*	userProfile := relate_tables.UserProfile{
+			Pic:   "1.jpg",
+			CPic:  "2.jpg",
+			Phone: "150xxx",
+			User: relate_tables.User{
+				Id:   0,
+				Name: "jamison",
+				Age:  20,
+				Addr: "xc",
+			},
+		}
 
-	db.Create(&userProfile)
+		db.Create(&userProfile)*/
 
+	//关联查询
+	//方式一
+	var userProfile relate_tables.UserProfile
+	db.First(&userProfile, 1)
+	db.Model(&userProfile).Association("User").Find(&userProfile.User)
+	fmt.Println(userProfile)
 }
