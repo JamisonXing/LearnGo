@@ -6,7 +6,7 @@ type Article2 struct {
 	Content string `gorm:"type:varchar(204)"`
 	Desc    string `gorm:"type:varchar(204)"`
 	UId     uint
-	Tag     []Tag `gorm:"many2many:Article2_Tags"`
+	Tags    []Tag `gorm:"many2many:Article2_Tags"`
 }
 
 type Tag struct {
