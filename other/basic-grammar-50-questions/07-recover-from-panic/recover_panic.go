@@ -6,7 +6,7 @@ import "fmt"
 /*
 在一个 defer 延迟执行的函数中调用 recover ，它便能捕捉/中断 panic。
 */
-
+//
 /*// 错误方式
 func main() {
 	recover() //什么都不做
